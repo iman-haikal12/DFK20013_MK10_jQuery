@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DFK20013 Login</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="login_theme.min.css">
+
+    <link rel="stylesheet" href="jquery.mobile.icons.min.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css">
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="loginPage" data-theme="a">
+
+    <div data-role="header" data-theme="a">
+        <h1>Login System</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+
+        <label for="username">Username</label>
+        <input type="text" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" id="password">
+
+        <button id="loginBtn" data-theme="a">Login</button>
+
+    </div>
+
+    <!-- POPUP -->
+    <div data-role="popup" id="errorPopup" data-theme="a" data-position-to="window">
+        <div data-role="header">
+            <h1>Ralat</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+            <p>Username atau password salah</p>
+            <a href="#" data-rel="back" data-role="button">OK</a>
+        </div>
+    </div>
+
+</div>
+
+    <!-- PAGE 2 INFO -->
+    <div data-role="page" id="infoPage" data-theme="b">
+
+        <div data-role="header" data-theme="b">
+            <h1>Info Pelajar</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+
+            <h2>Login Berjaya</h2>
+
+            <p>Selamat datang ke sistem jQuery Mobile.</p>
+
+            <a href="#loginPage" data-role="button" data-theme="b">Logout</a>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
